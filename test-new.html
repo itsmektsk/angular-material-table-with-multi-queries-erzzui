@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Contacts UI</title>
+    <link rel="stylesheet" href="styles.css">
+	<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #343a40;
+    color: white;
+}
+
+.search-bar {
+    width: 60%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.main-dashboard {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.left-panel, .middle-panel, .right-panel {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+.contact-card, .banker-card, .ranking-card {
+    background-color: #eaeaea;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.contact-card button, .banker-card button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-card button:hover, .banker-card button:hover {
+    background-color: #0056b3;
+}
+	
+	</style>
+</head>
+<body>
+    <header>
+	
+        <input type="text" placeholder="Search for companies..." class="search-bar">
+        <div class="user-profile">
+            <img src="user-profile.jpg" alt="User Profile" class="profile-pic">
+            <span class="user-name">Logged-in Associate</span>
+            <span class="notifications">🔔</span>
+        </div>
+    </header>
+    <div class="main-dashboard">
+        <div class="left-panel">
+            <h2>Company: Facebook</h2>
+            <p>Industry: Technology</p>
+            <p>Location: Menlo Park, CA</p>
+            <h3>Contacts at Facebook</h3>
+            <div class="contact-card">
+                <h4>Contact 1: John Doe</h4>
+                <p>CEO</p>
+                <button>View Connections</button>
+            </div>
+            <div class="contact-card">
+                <h4>Contact 2: Jane Smith</h4>
+                <p>CFO</p>
+                <button>View Connections</button>
+            </div>
+            <div class="contact-card">
+                <h4>Contact 3: Mike Brown</h4>
+                <p>CTO</p>
+                <button>View Connections</button>
+            </div>
+        </div>
+        <div class="middle-panel">
+            <h3>Bankers/Associates Who Know [Contact Name]</h3>
+            <div class="banker-card">
+                <h4>Banker 1: Jane Smith</h4>
+                <p>VP, Sales</p>
+                <p>5 shared contacts</p>
+                <button>Connect</button>
+            </div>
+            <div class="banker-card">
+                <h4>Banker 2: Mike Brown</h4>
+                <p>Director, Marketing</p>
+                <p>3 shared contacts</p>
+                <button>Connect</button>
+            </div>
+            <div class="banker-card">
+                <h4>Banker 3: Sarah Lee</h4>
+                <p>Manager, Operations</p>
+                <p>2 shared contacts</p>
+                <button>Connect</button>
+            </div>
+        </div>
+        <div class="right-panel">
+            <h3>Your Network Ranking</h3>
+            <div class="ranking-card">
+                <p>1. Jane Smith (5)</p>
+            </div>
+            <div class="ranking-card">
+                <p>2. Mike Brown (3)</p>
+            </div>
+            <div class="ranking-card">
+                <p>3. Sarah Lee (2)</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
